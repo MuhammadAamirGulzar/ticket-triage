@@ -1,0 +1,11 @@
+ticket_id,predicted_category,confidence,second_category,second_confidence,needs_human,flags,reason
+N01,Billing,0.679,Account Access,0.127,True,,low confidence (0.68 < 0.85)
+N02,Account Access,0.988,Billing,0.004,False,,auto-routed
+N03,Account Access,0.379,Billing,0.245,True,,low confidence (0.38 < 0.85)
+N04,Account Access,0.391,Billing,0.237,True,,low confidence (0.39 < 0.85)
+N05,Cancellation,0.86,Account Access,0.057,False,RETENTION,auto-routed
+N06,Account Access,0.396,Billing,0.324,True,PERSONAL_DATA,low confidence (0.40 < 0.85)
+N07,Account Access,0.395,Billing,0.236,True,,low confidence (0.40 < 0.85)
+N08,Cancellation,0.752,Billing,0.096,True,RETENTION,low confidence (0.75 < 0.85)
+N09,Account Access,0.886,Billing,0.046,False,,auto-routed
+N10,Account Access,0.367,Feature Request,0.206,True,,low confidence (0.37 < 0.85)
