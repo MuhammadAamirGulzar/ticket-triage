@@ -19,7 +19,7 @@ _SECURITY = re.compile(
 )
 _OUTAGE = re.compile(r"\bnobody\b|\bno ?one\b|\beveryone\b|\ball (our|my|the) (staff|sites|users|locations)\b|\boutage\b|\bis down\b")
 _LEGAL = re.compile(r"solicitor|lawyer|legal action|\bsue\b|chargeback|ombudsman|trading standards|small claims")
-_RETENTION = re.compile(r"\bpause|downgrad|instead of cancel|cheaper plan")
+_RETENTION = re.compile(r"downgrad|instead of cancel")
 
 
 @dataclass
