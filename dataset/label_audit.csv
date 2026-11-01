@@ -1,0 +1,13 @@
+ticket_id,original_label,corrected_label,secondary_label,ambiguous,action,reason
+T007,Billing,Account Access,,0,relabel,"Login link expiring is a sign-in problem; nothing about payment."
+T019,Cancellation,Feature Request,,0,relabel,"Asks for new functionality (cancel a shift swap request); 'cancel' refers to a shift swap, not the subscription."
+T033,Feature Request,Bug,,0,relabel,"Existing PDF export is broken (cuts off a column); that is a defect, not a new feature."
+T015,Cancellation,Cancellation,Billing,1,keep,"Double charge plus intent to leave. Rule: an explicit intent to cancel decides it; Billing is secondary."
+T006,Cancellation,Cancellation,Billing,1,keep,"Partial cancellation (closing two sites); also changes the bill."
+T039,Account Access,Account Access,Billing,1,keep,"Suspended account they cannot use; root cause may be a payment-status error."
+T030,Bug,Bug,Account Access,1,keep,"Nobody at a site can log in after a release: a regression and an outage, also an access problem."
+T040,Billing,Billing,Cancellation,1,keep,"Plan downgrade is a billing change, but it is a churn and retention signal."
+T024,Bug,Bug,,0,flag,"Correct label, but this is a data-exposure incident (pay rates visible) and needs urgent escalation."
+T005,Billing,Billing,,0,flag,"Correct label, but the text contains a full card number and expiry (PCI). Redacted in the clean dataset."
+T012,Account Access,Account Access,,0,flag,"Correct label, but the text contains an email address and phone number. Redacted in the clean dataset."
+T027,Billing,Billing,,0,flag,"Correct label, but the text contains a postal address. Redacted in the clean dataset."
