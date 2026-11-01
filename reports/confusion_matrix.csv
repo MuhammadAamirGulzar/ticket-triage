@@ -1,0 +1,6 @@
+,pred: Billing,pred: Bug,pred: Account Access,pred: Feature Request,pred: Cancellation
+true: Billing,8,0,0,0,1
+true: Bug,0,9,0,0,0
+true: Account Access,0,0,8,0,0
+true: Feature Request,0,0,0,8,0
+true: Cancellation,1,0,0,0,5

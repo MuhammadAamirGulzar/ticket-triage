@@ -1,0 +1,3 @@
+ticket_id,text,true_label,original_label,secondary_label,ambiguous,predicted,confidence,second_choice,second_confidence,correct
+T015,"You charged us twice again this month, we want to cancel and get a refund.",Cancellation,Cancellation,Billing,1,Billing,0.691,Cancellation,0.281,False
+T040,Can I downgrade to fewer locations instead of cancelling?,Billing,Billing,Cancellation,1,Cancellation,0.807,Billing,0.126,False

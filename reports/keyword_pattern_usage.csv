@@ -1,0 +1,50 @@
+category,pattern,labelled_tickets_matched
+Billing,charg,2
+Billing,invoice,2
+Billing,refund,3
+Billing,\bbill,1
+Billing,payment,1
+Billing,\bpay\b,3
+Billing,\bpaid\b,1
+Billing,\bcard\b,3
+Billing,\[card\],1
+Billing,\bvat\b,1
+Billing,\bcost,2
+Billing,discount,1
+Billing,bank transfer,1
+Billing,downgrad,1
+Billing,billing,1
+Bug,crash,1
+Bug,blank,1
+Bug,does nothing,1
+Bug,wrong,2
+Bug,disappear,1
+Bug,\blate\b,1
+Bug,cuts? off,1
+Bug,after (your|the) update,1
+Bug,shouldn.t happen,1
+Account Access,log ?in,3
+Account Access,password,1
+Account Access,locked,1
+Account Access,lock(ed)? out,1
+Account Access,two-factor,1
+Account Access,\bcode\b,1
+Account Access,reset,1
+Account Access,access,1
+Account Access,suspend,1
+Account Access,email address,1
+Account Access,get in\b,1
+Feature Request,would love,1
+Feature Request,would (be|help),2
+Feature Request,could (you|the app|we),1
+Feature Request,can we have,1
+Feature Request,please add,1
+Feature Request,\badd\b,3
+Feature Request,feature,1
+Feature Request,option to,1
+Feature Request,\bsuggest,1
+Cancellation,cancel,6
+Cancellation,close (the|my|our) account,1
+Cancellation,switching to,1
+Cancellation,auto-?renew,1
+Cancellation,we.re done,1

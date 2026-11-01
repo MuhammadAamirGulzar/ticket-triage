@@ -1,0 +1,41 @@
+ticket_id,text,true_label,original_label,secondary_label,ambiguous,predicted,confidence,second_choice,second_confidence,correct
+T001,"I was charged twice for my October subscription, can you refund one?",Billing,Billing,,0,Billing,0.845,Cancellation,0.057,True
+T002,The rota page shows a blank screen after I click Publish.,Bug,Bug,,0,Bug,0.976,Account Access,0.008,True
+T003,"Can't log in, it says my password is wrong but I just reset it.",Account Access,Account Access,,0,Account Access,0.92,Bug,0.079,True
+T004,Would love a way to export the rota to Google Calendar.,Feature Request,Feature Request,,0,Feature Request,0.873,Account Access,0.053,True
+T005,"Please update my card, new one is [CARD] [EXPIRY].",Billing,Billing,,0,Billing,0.927,Cancellation,0.024,True
+T006,We're closing two sites so I need to cancel those locations.,Cancellation,Cancellation,Billing,1,Cancellation,0.76,Billing,0.101,True
+T007,My login link keeps expiring before I can use it.,Account Access,Billing,,0,Account Access,0.848,Billing,0.066,True
+T008,Invoice shows 14 locations but we only have 12.,Billing,Billing,,0,Billing,0.668,Account Access,0.15,True
+T009,App crashes on Android when I swap a shift.,Bug,Bug,,0,Bug,0.974,Account Access,0.011,True
+T010,Can we have different pay rates for weekend shifts?,Feature Request,Feature Request,,0,Feature Request,0.618,Billing,0.284,True
+T011,I want to cancel our plan at the end of this month.,Cancellation,Cancellation,,0,Cancellation,0.883,Account Access,0.047,True
+T012,Locked out after 3 attempts. Reach me on [EMAIL] or [PHONE].,Account Access,Account Access,,0,Account Access,0.986,Billing,0.005,True
+T013,Shift reminders are being sent an hour late since the clocks changed.,Bug,Bug,,0,Bug,0.977,Account Access,0.008,True
+T014,Is there a discount for annual billing?,Billing,Billing,,0,Billing,0.981,Cancellation,0.007,True
+T015,"You charged us twice again this month, we want to cancel and get a refund.",Cancellation,Cancellation,Billing,1,Billing,0.691,Cancellation,0.281,False
+T016,"Please add a dark mode, the screen is too bright at night.",Feature Request,Feature Request,,0,Feature Request,0.995,Account Access,0.002,True
+T017,My manager removed me and now I can't access my schedule.,Account Access,Account Access,,0,Account Access,0.879,Billing,0.046,True
+T018,The total hours on the timesheet report are wrong for night shifts.,Bug,Bug,,0,Bug,0.973,Account Access,0.011,True
+T019,Can you add a feature to cancel a shift swap request?,Feature Request,Cancellation,,0,Feature Request,0.95,Cancellation,0.046,True
+T020,"We're switching to another provider, how do I close the account?",Cancellation,Cancellation,,0,Cancellation,0.986,Account Access,0.006,True
+T021,VAT is missing from our last invoice.,Billing,Billing,,0,Billing,0.923,Cancellation,0.026,True
+T022,Two-factor code never arrives by SMS.,Account Access,Account Access,,0,Account Access,0.976,Billing,0.008,True
+T023,It would be great to see labour cost as a % of sales.,Feature Request,Feature Request,,0,Feature Request,0.764,Billing,0.155,True
+T024,"Staff can see each other's pay rates, that shouldn't happen.",Bug,Bug,,0,Bug,0.948,Billing,0.03,True
+T025,How do I change the email address on our account?,Account Access,Account Access,,0,Account Access,0.882,Billing,0.048,True
+T026,Clock-in button does nothing on iPad Safari.,Bug,Bug,,0,Bug,0.973,Account Access,0.013,True
+T027,"Please send the refund cheque to [ADDRESS], Leeds [POSTCODE].",Billing,Billing,,0,Billing,0.531,Cancellation,0.168,True
+T028,"Not using it enough to justify the cost, please cancel.",Cancellation,Cancellation,,0,Cancellation,0.677,Billing,0.242,True
+T029,Could the app suggest who to call in when someone is sick?,Feature Request,Feature Request,,0,Feature Request,0.995,Account Access,0.002,True
+T030,After your update yesterday nobody at our Bristol site can log in.,Bug,Bug,Account Access,1,Bug,0.86,Account Access,0.124,True
+T031,Card payment failed but the money left our account.,Billing,Billing,,0,Billing,0.847,Account Access,0.073,True
+T032,Add an option to set maximum weekly hours per employee.,Feature Request,Feature Request,,0,Feature Request,0.995,Account Access,0.002,True
+T033,The schedule export to PDF cuts off the last column.,Bug,Feature Request,,0,Bug,0.973,Account Access,0.009,True
+T034,"Forgot which email I signed up with, can you help me get in?",Account Access,Account Access,,0,Account Access,0.848,Feature Request,0.049,True
+T035,"Please stop the auto-renewal, we're done after this term.",Cancellation,Cancellation,,0,Cancellation,0.993,Billing,0.002,True
+T036,Holiday requests disappear after approval.,Bug,Bug,,0,Bug,0.98,Account Access,0.007,True
+T037,Can we pay by bank transfer instead of card?,Billing,Billing,,0,Billing,0.99,Feature Request,0.004,True
+T038,SSO with Microsoft would help our head office team.,Feature Request,Feature Request,,0,Feature Request,0.838,Account Access,0.087,True
+T039,Our account was suspended but we paid on time.,Account Access,Account Access,Billing,1,Account Access,0.506,Billing,0.397,True
+T040,Can I downgrade to fewer locations instead of cancelling?,Billing,Billing,Cancellation,1,Cancellation,0.807,Billing,0.126,False
