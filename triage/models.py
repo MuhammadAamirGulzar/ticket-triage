@@ -75,14 +75,14 @@ def keyword_rules() -> Pipeline:
     return Pipeline([("clf", KeywordRules())])
 
 
-def _with_keywords(weight: float = 2.0) -> FeatureUnion:
+def _with_keywords(weight: float = 2.0, patterns: dict[str, list[str]] | None = None) -> FeatureUnion:
     # Keyword counts are scaled to [0, 1] and up-weighted so 5 dense features
     # are not drowned out by thousands of sparse n-grams.
     return FeatureUnion(
         [
             ("word", _word_tfidf()),
             ("char", TfidfVectorizer(analyzer="char_wb", ngram_range=(2, 5), sublinear_tf=True)),
-            ("keywords", Pipeline([("hits", KeywordFeatures()), ("scale", MaxAbsScaler())])),
+            ("keywords", Pipeline([("hits", KeywordFeatures(patterns)), ("scale", MaxAbsScaler())])),
         ],
         transformer_weights={"word": 1.0, "char": 1.0, "keywords": weight},
     )
@@ -98,9 +98,9 @@ def nb_counts_keywords() -> Pipeline:
     ])
 
 
-def logreg_word_char_keywords() -> Pipeline:
+def logreg_word_char_keywords(patterns: dict[str, list[str]] | None = None) -> Pipeline:
     return Pipeline([
-        ("vec", _with_keywords()),
+        ("vec", _with_keywords(patterns=patterns)),
         ("clf", LogisticRegression(C=10, max_iter=5000, class_weight="balanced", random_state=SEED)),
     ])
 
